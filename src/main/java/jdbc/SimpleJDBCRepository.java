@@ -39,7 +39,7 @@ public class SimpleJDBCRepository {
             """;
     private static final String FIND_USER_BY_NAME_SQL = """
             SELECT * FROM myusers
-            WHERE firstname LIKE CONCAT(?, %)
+            WHERE firstname LIKE CONCAT(?, '%')
             """;
     private static final String FIND_ALL_USER_SQL = """
             SELECT * FROM myusers
